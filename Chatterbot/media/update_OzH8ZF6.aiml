@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>O QUE PRECISO LEVAR PARA A HORA DA PROVA</pattern>
+
+<template>É necessária uma caneta preta de material transparente, cartão de confirmação e documento de identificação com foto.</template>
+</category>
+
+ 
+
+<category>
+<pattern>OLÁ TUDO BEM</pattern>
+
+<template>
+<random>
+ <li>Tudo em ordem, e contigo?.</li>
+ <li>Muito bem, obrigado.</li>
+ <li>Eu estou bem e tu?</li> 
+ <li>Estou sim e você?</li>
+ <li>Muito bem e você?</li>
+ <li>Tudo legal.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>ESTOU BEM</pattern>
+<template>
+<random>
+ <li>Bacana, e qual é a sua duvida sobre o enem?</li>
+ <li>Legal, e qual é a sua dúvida?</li>
+ <li>Que bom , e em que posso te ajudar?</li>
+</random>
+</template>
+</category> 
+
+<category>
+<pattern>QUAL É O SEU NOME</pattern>
+
+<template>
+<random>
+ <li>Me chamam de CENEC, e você como se chama?</li>
+ <li>CENEC, e o seu qual é?</li>
+ <li>Meu Nome é CNEC.</li>
+ </random>
+</template>
+</category>
+
+<category>
+<pattern>MEU NOME É *</pattern>
+
+<template>
+<think><set name="nome"><star/></set></think>Muito prazer <get name="nome"></get>, em que posso ser útil?
+</template>
+</category> 
+
+<category>
+<pattern>O QUE É INTELIGÊNCIA ARTIFICIAL</pattern>
+
+<template>É um ramo da ciência da computação que se propõe a elaborar dispositivos que simulem a capacidade humana de raciocinar.</template>
+</category>
+
+ 
+
+<category>
+<pattern>O QUE É O ENEM</pattern>
+
+<template>O Exame Nacional do Ensino Médio foi criado pelo MEC para testar o nível de conhecimento dos alunos que concluíram o ensino Médio!</template>
+</category>
+
+ 
+
+<category>
+<pattern>QUAL A IMPORTÂNCIA DO ENEM</pattern>
+
+<template>Os resultados obtidos no ENEM são necessários para os estudantes ingressarem em universidades públicas ou ganhar bolsas!</template>
+</category>
+
+<category>
+
+<pattern>COMO ME INSCREVER</pattern>
+
+<template>As inscrições do ENEM 2016 serão realizadas a partir das 10h do dia 09/05 até as 23h59 do dia 20/05, exclusivamente pela internet, no site enem.inep.gov.br/participante.</template>
+</category>
+
+ 
+<category>
+<pattern>UMA DICA PARA ESTUDAR PARA O ENEM</pattern>
+
+<template>
+<random>
+<li>Treinar a fluência na leitura , isso irá te ajudar na interpretação das perguntas!</li>
+<li>Tente resolver simulados, isso irá te mostrar qual matéria ou assunto você precisa estudar mais!</li>
+<li>Por mais estranho que pareça durmir é uma boa forma de consolidar a memória, tente descansar bem antes da prova!</li>
+<li>Tente variar as disciplinas a serem estudadas durante o dia, estudar somente uma pode ser estressante</li>
+<li>Nunca deixe para estudar em cima da hora, e controle sua ansiedade antes da prova!</li>
+</random> 
+</template>
+</category> 
+
+<category>
+<pattern>O QUE FAZER NOS DIAS QUE ANTECEDEM O EXAME</pattern>
+
+<template>Faça questões de exames anteriores, cronometrando o tempo, descanse a mente e o corpo junto à família e amigos, durma cedo e controle a ansiedade!</template>
+</category>
+
+ 
+
+<category>
+<pattern>O QUE É IMPORTANTE SABER PARA FAZER UMA BOA PROVA</pattern>
+
+<template>Responda as questões que você domina. Ao respondê-las, você garante duas coisas importantes: os pontos e a coerência nas respostas, depois faça as que você considere mais difíceis!</template>
+</category>
+
+<category>
+<pattern>QUAIS SÃO AS QUESTÕES QUE ENVOLVEM A PROVA</pattern>
+
+<template>Ciências Humanas e suas Tecnologias (História, Geografia, Filosofia e Sociologia); Ciências da Natureza e suas Tecnologias (Química, Física e Biologia); Linguagens, Códigos e suas Tecnologias e Redação (Língua Portuguesa, Literatura, Língua Estrangeira - Inglês ou Espanhol, Artes, Educação Física e Tecnologias da Informação e Comunicação); Matemática e suas Tecnologias (Matemática).</template>
+</category>
+
+ 
+
+<category>
+<pattern>UMA DICA PARA A HORA DA PROVA</pattern>
+
+<template>Leve alimentos leves para comer e água. E não se esqueça de conferir os dados na prova recebida e no cartão-resposta.</template>
+</category>
+
+ 
+<category>
+<pattern>COMO FAZER UMA BOA REDAÇÃO</pattern>
+
+<template>
+<random>
+<li> Organize seus argumentos sobre o tema proposto, e os escreva de forma compreensível. Organize os argumentos de forma crescente, ou seja, deixe o argumento mais forte para o final;</li>
+<li> Em dissertações que é necessário defender algo, não fique "em cima do muro", coloque claramente sua posição, pois muitas vezes estão interessados em avaliar sua capacidade de opinar, refletir e argumentar;</li>
+<li>»Escreva com clareza;
+» Seja objetivo e fiel ao tema;
+» Escolha sempre a ordem direta das frases;
+» Evite períodos e parágrafos muito longos;
+» Elimine expressões difíceis ou desnecessárias do texto;</li>
+<li>» Não use termos chulos, gírias e regionalismos;
+» Esteja sempre atualizado em tudo que acontece no mundo;
+» Saiba principalmente as regras de Acentuação Gráfica, pontuação, ortografia e concordância.</li>
+</random>
+</template>
+</category>
+
+ 
+
+<category>
+<pattern>QUAL A IMPORTÂNCIA DA REDAÇÃO</pattern>
+
+<template>A redação é muito importante para quem vai tentar uma bolsa de estudos com a nota do Enem, ele pode ter peso de até 50% da nota!</template>
+</category>
+
+ 
+<category>
+<pattern>PORQUE É IMPORTANTE NÃO ZERAR A REDAÇÃO</pattern>
+
+<template>Não zerar a redação é um dos requisitos para conseguir concorrer a bolsas como FIES e Prouni, por isso faça uma boa redação!</template>
+</category>
+
+ 
+<category>
+<pattern>É UMA BOA PRÁTICA “CHUTAR”</pattern>
+
+<template>Não,o sistema de correção das provas consegue detectar se o candidato chutou ou não, leia mais sobre o assunto clicando aqui http://vestibular.mundoeducacao.bol.uol.com.br/enem/sistema-tri-chutar-ou-nao-chutar-no-enem.htm</template>
+</category>
+
+ 
+<category>
+<pattern>COMO PLANEJAR O TEMPO DA PROVA DO ENEM</pattern>
+
+<template>O primeiro passo é dar uma olhada geral no caderno de questões antes de começar, depois comece a resolver as questões mais fáceis e vá resolvendo as questões mais difíceis!</template>
+</category>
+
+ 
+
+<category>
+<pattern>QUAIS AS REGRAS PARA FAZER A REDAÇÃO</pattern>
+
+<template>Não escreva difícil, não faça críticas sem fundamento, não faça repetição desnecessária de palavras, não fique "enchendo linguiça", e o mais importante toda redação deve conter introdução, desenvolvimento e conclusão! </template>
+</category>
+
+ 
+
+<category>
+<pattern>QUAIS OS MOTIVOS PODEM ZERAR A NOTA DA REDAÇÃO</pattern>
+
+<template>Fugir do tema, inserções indevidas ou desconectadas do restante do texto, a não utilização da estrutura dissertativo-argumentativo, textos com menos de 7 linhas, cópia de textos motivadores, desrespeitar os direitos humanos e entregar a folha em branco! </template>
+</category>
+
+ 
+
+<category>
+<pattern>HÁ COMO SABER QUAIS QUESTÕES SÃO CONSIDERADAS DIFÍCEIS</pattern>
+
+<template>Não. Porém, é importante destacar que Matemática e redação são as provas onde o maior número de acertos para o candidatos, geralmente  isso vai depender do quanto você tem conhecimento ou estudou!</template>
+</category>
+
+
+</aiml>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+<category>
+<pattern>O QUE PRECISO LEVAR PARA A HORA DA PROVA</pattern>
+
+<template>� necess�ria uma caneta preta de material transparente, cart�o de confirma��o e documento de identifica��o com foto.</template>
+</category>
+
+
+
+<category>
+<pattern>OL� TUDO BEM</pattern>
+
+<template>
+<random>
+ <li>Tudo em ordem, e contigo?.</li>
+ <li>Muito bem, obrigado.</li>
+ <li>Eu estou bem e tu?</li>
+ <li>Estou sim e voc�?</li>
+ <li>Muito bem e voc�?</li>
+ <li>Tudo legal.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>ESTOU BEM</pattern>
+<template>
+<random>
+ <li>Bacana, e qual � a sua duvida sobre o enem?</li>
+ <li>Legal, e qual � a sua d�vida?</li>
+ <li>Que bom , e em que posso te ajudar?</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>QUAL � O SEU NOME</pattern>
+
+<template>
+<random>
+ <li>Me chamam de CENEC, e voc� como se chama?</li>
+ <li>CENEC, e o seu qual �?</li>
+ <li>Meu Nome � CNEC.</li>
+ </random>
+</template>
+</category>
+
+<category>
+<pattern>MEU NOME � *</pattern>
+
+<template>
+<think><set name="nome"><star/></set></think>Muito prazer <get name="nome"></get>, em que posso ser �til?
+</template>
+</category>
+
+<category>
+<pattern>O QUE � INTELIG�NCIA ARTIFICIAL</pattern>
+
+<template>� um ramo da ci�ncia da computa��o que se prop�e a elaborar dispositivos que simulem a capacidade humana de raciocinar.</template>
+</category>
+
+
+
+<category>
+<pattern>O QUE � O ENEM</pattern>
+
+<template>O Exame Nacional do Ensino M�dio foi criado pelo MEC para testar o n�vel de conhecimento dos alunos que conclu�ram o ensino M�dio!</template>
+</category>
+
+
+
+<category>
+<pattern>QUAL A IMPORT�NCIA DO ENEM</pattern>
+
+<template>Os resultados obtidos no ENEM s�o necess�rios para os estudantes ingressarem em universidades p�blicas ou ganhar bolsas!</template>
+</category>
+
+<category>
+
+<pattern>COMO ME INSCREVER</pattern>
+
+<template>As inscri��es do ENEM 2016 ser�o realizadas a partir das 10h do dia 09/05 at� as 23h59 do dia 20/05, exclusivamente pela internet, no site enem.inep.gov.br/participante.</template>
+</category>
+
+
+<category>
+<pattern>UMA DICA PARA ESTUDAR PARA O ENEM</pattern>
+
+<template>
+<random>
+<li>Treinar a flu�ncia na leitura , isso ir� te ajudar na interpreta��o das perguntas!</li>
+<li>Tente resolver simulados, isso ir� te mostrar qual mat�ria ou assunto voc� precisa estudar mais!</li>
+<li>Por mais estranho que pare�a durmir � uma boa forma de consolidar a mem�ria, tente descansar bem antes da prova!</li>
+<li>Tente variar as disciplinas a serem estudadas durante o dia, estudar somente uma pode ser estressante</li>
+<li>Nunca deixe para estudar em cima da hora, e controle sua ansiedade antes da prova!</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>O QUE FAZER NOS DIAS QUE ANTECEDEM O EXAME</pattern>
+
+<template>Fa�a quest�es de exames anteriores, cronometrando o tempo, descanse a mente e o corpo junto � fam�lia e amigos, durma cedo e controle a ansiedade!</template>
+</category>
+
+
+
+<category>
+<pattern>O QUE � IMPORTANTE SABER PARA FAZER UMA BOA PROVA</pattern>
+
+<template>Responda as quest�es que voc� domina. Ao respond�-las, voc� garante duas coisas importantes: os pontos e a coer�ncia nas respostas, depois fa�a as que voc� considere mais dif�ceis!</template>
+</category>
+
+<category>
+<pattern>QUAIS S�O AS QUEST�ES QUE ENVOLVEM A PROVA</pattern>
+
+<template>Ci�ncias Humanas e suas Tecnologias (Hist�ria, Geografia, Filosofia e Sociologia); Ci�ncias da Natureza e suas Tecnologias (Qu�mica, F�sica e Biologia); Linguagens, C�digos e suas Tecnologias e Reda��o (L�ngua Portuguesa, Literatura, L�ngua Estrangeira - Ingl�s ou Espanhol, Artes, Educa��o F�sica e Tecnologias da Informa��o e Comunica��o); Matem�tica e suas Tecnologias (Matem�tica).</template>
+</category>
+
+
+
+<category>
+<pattern>UMA DICA PARA A HORA DA PROVA</pattern>
+
+<template>Leve alimentos leves para comer e �gua. E n�o se esque�a de conferir os dados na prova recebida e no cart�o-resposta.</template>
+</category>
+
+
+<category>
+<pattern>COMO FAZER UMA BOA REDA��O</pattern>
+
+<template>
+<random>
+<li> Organize seus argumentos sobre o tema proposto, e os escreva de forma compreens�vel. Organize os argumentos de forma crescente, ou seja, deixe o argumento mais forte para o final;</li>
+<li> Em disserta��es que � necess�rio defender algo, n�o fique "em cima do muro", coloque claramente sua posi��o, pois muitas vezes est�o interessados em avaliar sua capacidade de opinar, refletir e argumentar;</li>
+<li>�Escreva com clareza;
+� Seja objetivo e fiel ao tema;
+� Escolha sempre a ordem direta das frases;
+� Evite per�odos e par�grafos muito longos;
+� Elimine express�es dif�ceis ou desnecess�rias do texto;</li>
+<li>� N�o use termos chulos, g�rias e regionalismos;
+� Esteja sempre atualizado em tudo que acontece no mundo;
+� Saiba principalmente as regras de Acentua��o Gr�fica, pontua��o, ortografia e concord�ncia.</li>
+</random>
+</template>
+</category>
+
+
+
+<category>
+<pattern>QUAL A IMPORT�NCIA DA REDA��O</pattern>
+
+<template>A reda��o � muito importante para quem vai tentar uma bolsa de estudos com a nota do Enem, ele pode ter peso de at� 50% da nota!</template>
+</category>
+
+
+<category>
+<pattern>PORQUE � IMPORTANTE N�O ZERAR A REDA��O</pattern>
+
+<template>N�o zerar a reda��o � um dos requisitos para conseguir concorrer a bolsas como FIES e Prouni, por isso fa�a uma boa reda��o!</template>
+</category>
+
+
+<category>
+<pattern>� UMA BOA PR�TICA �CHUTAR�</pattern>
+
+<template>N�o,o sistema de corre��o das provas consegue detectar se o candidato chutou ou n�o, leia mais sobre o assunto clicando aqui http://vestibular.mundoeducacao.bol.uol.com.br/enem/sistema-tri-chutar-ou-nao-chutar-no-enem.htm</template>
+</category>
+
+
+<category>
+<pattern>COMO PLANEJAR O TEMPO DA PROVA DO ENEM</pattern>
+
+<template>O primeiro passo � dar uma olhada geral no caderno de quest�es antes de come�ar, depois comece a resolver as quest�es mais f�ceis e v� resolvendo as quest�es mais dif�ceis!</template>
+</category>
+
+
+
+<category>
+<pattern>QUAIS AS REGRAS PARA FAZER A REDA��O</pattern>
+
+<template>N�o escreva dif�cil, n�o fa�a cr�ticas sem fundamento, n�o fa�a repeti��o desnecess�ria de palavras, n�o fique "enchendo lingui�a", e o mais importante toda reda��o deve conter introdu��o, desenvolvimento e conclus�o! </template>
+</category>
+
+
+
+<category>
+<pattern>QUAIS OS MOTIVOS PODEM ZERAR A NOTA DA REDA��O</pattern>
+
+<template>Fugir do tema, inser��es indevidas ou desconectadas do restante do texto, a n�o utiliza��o da estrutura dissertativo-argumentativo, textos com menos de 7 linhas, c�pia de textos motivadores, desrespeitar os direitos humanos e entregar a folha em branco! </template>
+</category>
+
+
+
+<category>
+<pattern>H� COMO SABER QUAIS QUEST�ES S�O CONSIDERADAS DIF�CEIS</pattern>
+
+<template>N�o. Por�m, � importante destacar que Matem�tica e reda��o s�o as provas onde o maior n�mero de acertos para o candidatos, geralmente  isso vai depender do quanto voc� tem conhecimento ou estudou!</template>
+</category>
+
+
+</aiml>

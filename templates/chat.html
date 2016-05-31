@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>ChatterBot CENEC</title>
+    <link href="{% static 'css/chat.css' %}" rel="stylesheet">
+</head>
+
+<body>
+{% block nav %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">ChatterBot</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/chat/">Chat</a></li>
+                <li><a href="/admin/">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+{% block content %}
+    <div class="jumbotron">
+        <form id="chat_form" role="form" action="/chat_action/" method="post">
+            <div class="form-group"><br>
+                <input name="chat_id" type="text" class="invisible form-control input-sm"
+                       value="{{ chat_id }}">
+                <strong>Escolha alguém para conversar</strong>
+                <select id="select-bot" name="select-bot" class="form-control">
+                    {% for bot in bots %}
+                        <option value="{{ bot }}">{{ bot }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-comment"></span> Chat
+
+                </div>
+                <div class="panel-body">
+                    <ul class="media-list">
+                        {% for conversa in chat %}
+                            {% if conversa.question %}
+                                <li class="media">
+
+                                    <div class="media-body">
+
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle "
+                                                     src="{% static 'img/logo_you.png' %}"/>
+                                            </a>
+                                            <div class="media-body">
+                                                {{ conversa.question }}
+                                                <br/>
+                                                <small class="text-muted">{{ conversa.date }}
+                                                </small>
+                                                <hr/>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            {% endif %}
+                            {% if conversa.answer %}
+                                <li class="media">
+
+                                    <div class="media-body">
+
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle "
+                                                     src="{% static 'img/logo_cenec.jpg' %}"/>
+                                            </a>
+                                            <div class="media-body">
+                                                {{ conversa.answer }}
+                                                <br/>
+                                                <small class="text-muted">{{ conversa.date }}
+                                                </small>
+                                                <hr/>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input name="input-chat" class="form-control input-sm" type="text"
+                               style="font-size:20px;height:60px;"
+                               placeholder="Digite a sua pergunta..." autofocus/>
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-primary" id="btn-chat">Enviar</button>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+</body>
+</html>

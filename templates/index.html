@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>ChatterBot CENEC</title>
+</head>
+
+<body>
+{% block nav %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">ChatterBot</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/chat/">Chat</a></li>
+                <li><a href="/admin/">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+{% block content %}
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>ChatterBot CENEC</h1>
+        <p class="lead">
+            O ChatterBot CENEC irá ajudar bastante àquelas pessoas que precisam de
+            informações sobre o ENEM.<br/>
+            Utiliza uma linguagem fácil de entender e bem jovial.<br/>
+        </p>
+        <p><a class="btn btn-lg btn-success" href="/chat/" role="button">Conversar</a></p>
+    </div>
+{% endblock %}
+</body>
+</html>

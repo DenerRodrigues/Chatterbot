@@ -1,0 +1,361 @@
+{% extends "admin/base.html" %}
+
+
+{% load staticfiles %}
+{% block branding %}
+    <a href="{% url 'admin:index' %}" class="django-admin-logo">
+        <img src="{% static "logo_cenec.jpg" %}" alt="{{ site_header|default:_('ChatterBot') }}"
+             height="40">
+    </a>
+{% endblock branding %}>
+
+{% block usertools %}
+    {% if has_permission %}
+        <div id="user-tools">
+            <ul>
+                <li>
+                    {% block welcome-msg %}
+                        {{ _('Welcome,') }}
+                        <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+                    {% endblock %}
+                </li>
+                {% block userlinks %}
+                    {% if site_url %}
+                        <li>
+                            <a href="{{ site_url }}">
+                                {{ _('View site') }}
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if user.is_active and user.is_staff %}
+                        {% url 'django-admindocs-docroot' as docsroot %}
+                        {% if docsroot %}
+                            <li>
+                                <a href="{{ docsroot }}">
+                                    {{ _('Documentation') }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endif %}
+                    {% if user.has_usable_password %}
+                        <li>
+                            <a href="{% url 'admin:password_change' %}">
+                                {{ _('Change password') }}
+                            </a>
+                        </li>
+                    {% endif %}
+                    <li>
+                        <a href="{% url 'admin:logout' %}">
+                            {{ _('Log out') }}
+                        </a>
+                    </li>
+                {% endblock %}
+            </ul>
+        </div>
+    {% endif %}
+{% endblock usertools %}
+
+<div id="content" class="{% block coltype %}colMs{% endblock %}">
+    {% block content %}
+        <div id="content-main">
+            {% block object-tools %}{% endblock %}
+            {{ content }}
+        </div>
+    {% endblock %}
+</div>
+
+{% block extrastyle %}
+    <style>
+        #header a:link, #header a:visited {
+            background: #333;
+            color: #28beec;
+        }
+
+        #header {
+            position: relative;
+            top: 0;
+            z-index: 1100;
+            color: #eee;
+            font-size: 11px;
+            background: #303436;
+        }
+
+        div.breadcrumbs {
+            background: #303436;
+        }
+
+        .module h2, .module caption, .inline-group h2 {
+            margin: 0;
+            padding: 8px;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: left;
+            background: #303436;
+            color: #fff;
+        }
+
+        .button, input[type=submit], input[type=button], .submit-row input, a.button {
+            background: #303436;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .admin-title, #user-tools {
+            margin: 5px 10px 5px 2px;
+        }
+
+        #user-tools {
+            position: absolute;
+            right: -1px;
+            border-left: 1px solid #262626;
+        }
+
+        #user-tools li {
+            display: inline;
+            font-size: 12px;
+            border-left: 1px solid #404040;
+            border-right: 1px solid #262626;
+        }
+
+        /*  Dashboard
+        ------------------------------------------------------------------------------------------------------ */
+
+        #content {
+            width: 500px;
+        }
+
+        .module {
+            margin-bottom: 3px;
+        }
+
+        .module:last-child {
+            margin-bottom: 0;
+        }
+
+        /*  Dashboard Group Collapsible
+        ------------------------------------------------------------------------------------------------------ */
+
+        .container .group-collapsible {
+            position: relative;
+            margin: 0 0 7px;
+            padding: 2px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
+            border-radius: 7px;
+        }
+
+        .container .group-collapsible.collapse-closed .module {
+            display: none;
+        }
+
+        .container .group-collapsible.collapse-open,
+        .container .group-collapsible.collapse-closed:hover {
+            border: 2px solid #d4d4d4 !important;
+        }
+
+        .container .group-collapsible.collapse-closed {
+            border: 2px solid #e4e4e4 !important;
+        }
+
+        .container .group-collapsible h2 {
+            margin: 0 0 3px;
+            padding: 7px 5px 6px 10px;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            background-color: #e6e6e6;
+        }
+
+        .container .group-collapsible.collapse-closed h2 {
+            margin: 0;
+        }
+
+        .container .group-collapsible.collapse-closed h2.collapse-toggle {
+            text-shadow: 1px 1px #bcdfeb;
+            background-color: #c0e1ec;
+        {#            background-image: url('../img/icons/icon_fieldset_collapse-closed.png');#}
+        }
+
+        .container .group-collapsible.collapse-closed h2.collapse-toggle:hover,
+        .container .group-collapsible.collapse-open h2.collapse-toggle {
+            text-shadow: 1px 1px #bcdfeb;
+            background-color: #c0e1ec;
+        {#            background-image: url('../img/icons/icon_fieldset_collapse-open.png');#}
+        }
+
+        .container .group-collapsible table caption {
+            padding: 5px 10px;
+        }
+
+        /*  Dashboard Table Settings
+        ------------------------------------------------------------------------------------------------------ */
+
+        .module table {
+            border-right: none;
+        }
+
+        .module table + table {
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .module table th {
+            width: 100%;
+        }
+
+        .module table th.application {
+            background: #e6e6e6;
+        }
+
+        .module table tbody:only-child tr:first-child *:first-child {
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        .module table tbody:only-child tr:first-child *:last-child {
+            -moz-border-radius-topright: 4px;
+            -webkit-border-top-right-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        .module table td {
+            white-space: nowrap;
+        }
+
+        .module table td a {
+            display: block;
+            padding-right: 0;
+        }
+
+        /*  Navigation & Recent Actions (Content-Related & Content-Related-Extended)
+        ------------------------------------------------------------------------------------------------------ */
+
+        #content-related, #content-related-extended {
+            color: #444;
+            font-size: 11px;
+        }
+
+        #content-related h3, #content-related-extended h3,
+        #content-related h4, #content-related-extended h4 {
+            padding: 5px 10px;
+            font-size: 11px;
+        }
+
+        #content-related p,
+        #content-related-extended p {
+            border-top: 1px solid #ddd;
+            padding: 3px 10px 8px;
+            color: #999;
+            font-style: italic;
+        }
+
+        .module ul.menulist,
+        .module ul.actionlist {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #ddd;
+            list-style-type: none;
+        }
+
+        .module ul.actionlist {
+            padding-bottom: 3px;
+        }
+
+        ul.menulist li:last-child {
+            border-bottom-color: #ddd;
+        }
+
+        ul.menulist:last-child li:last-child,
+        ul.actionlist:last-child li:last-child {
+            margin-bottom: 5px;
+            border-bottom: none;
+        }
+
+        /*  Navigation ................................................... */
+
+        ul.menulist li {
+            margin: 0;
+            padding: 3px 10px 3px 9px;
+            border-bottom: 1px solid #eee;
+            list-style-type: none;
+        }
+
+        ul.menulist li a {
+            padding-left: 12px;
+            font-weight: bold;
+            background-color: transparent;
+            background-position: 2px 50%;
+            background-repeat: no-repeat;
+        }
+
+        ul.menulist li a.external {
+            background-position: 0 3px;
+        }
+
+        ul.menulist li a.internal:link, ul.menulist li a.internal:visited {
+        {#            background-image: url('../img/icons/icon-menulist_internal.png');#}
+        }
+
+        ul.menulist li a.internal:hover, ul.menulist li a.internal:active {
+            color: #666;
+        {#            background-image: url('../img/icons/icon-menulist_internal-hover.png');#}
+        }
+
+        ul.menulist li a.external:link, ul.menulist li a.external:visited {
+            color: #83c3d9;
+        {#            background-image: url('../img/icons/icon-menulist_external.png');#}
+        }
+
+        ul.menulist li a.external:hover, ul.menulist li a.external:active {
+            color: #666;
+        {#            background-image: url('../img/icons/icon-menulist_external-hover.png');#}
+        }
+
+        /*  Recent Actions ................................................... */
+
+        ul.actionlist li {
+            margin: 5px 0 0;
+            padding: 2px 10px 0 25px;
+            line-height: 12px;
+        }
+
+        ul.actionlist li a {
+            margin-left: -14px;
+            padding-left: 13px;
+            background-position: 0 50%;
+            background-repeat: no-repeat;
+        }
+
+        ul.actionlist li.addlink a:link, ul.actionlist li.addlink a:visited {
+        {#            background-image: url('../img/icons/icon-actionlist_addlink.png');#}
+        }
+
+        ul.actionlist li.addlink a:hover, ul.actionlist li.addlink a:active {
+        {#            background-image: url('../img/icons/icon-actionlist_addlink-hover.png');#}
+        }
+
+        ul.actionlist li.changelink a:link, ul.actionlist li.changelink a:visited {
+        {#            background-image: url('../img/icons/icon-actionlist_changelink.png');#}
+        }
+
+        ul.actionlist li.changelink a:hover, ul.actionlist li.changelink a:active {
+        {#            background-image: url('../img/icons/icon-actionlist_changelink-hover.png');#}
+        }
+
+        ul.actionlist li.deletelink {
+            color: #666;
+            text-decoration: line-through;
+        {#            background: url('../img/icons/icon-actionlist_deletelink.png') 11px 5px no-repeat;#}
+        }
+
+
+    </style>
+{% endblock %}

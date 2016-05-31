@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>OLÁ, TUDO BEM</pattern>
+        <template>
+            <random>
+                <li>Tudo bem! Estou pronto para lhe ajudar.</li>
+                <li>Olá! Tudo bem! Como posso te ajudar?</li>
+                <li>Oi! Tudo bem sim!</li>
+                <li>Olá! Tudo bem sim! Em que posso ajudar?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUAL O SEU NOME</pattern>
+        <template>
+            <random>
+                <li>Meu Nome é CNEC.</li>
+                <li>Olá! Me chamo CNEC!</li>
+                <li>Oi! Meu nome é CNEC.</li>
+                <li>Olá! Meu nome é CNEC!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>O QUE É INTELIGÊNCIA ARTIFICIAL</pattern>
+        <template>
+            <random>
+                <li>É um ramo da ciência da computação que se propõe a elaborar dispositivos que
+                    simulem a capacidade humana de raciocinar.
+                </li>
+                <li>Inteligência artificial (por vezes mencionada pela sigla em inglês AI -
+                    artificial intelligence) é a inteligência similar à humana exibida por
+                    mecanismos ou software.
+                </li>
+                <li>Inteligência artificial (artificial intelligence, em inglês) é um ramo de
+                    pesquisa da Ciência da Computação que se ocupa em desenvolver mecanismos e
+                    dispositivos tecnológicos que possam simular o raciocínio humano, ou seja, a
+                    inteligência que é característica dos seres humanos.
+                </li>
+                <li>A inteligência artificial é um ramo de pesquisa da ciência da computação que
+                    busca, através de símbolos computacionais, construir mecanismos e/ou
+                    dispositivos que simulem a capacidade do ser humano de pensar, resolver
+                    problemas, ou seja, de ser inteligente.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>O QUE É O ENEM</pattern>
+        <template>
+            <random>
+                <li>É a sigla de Exame Nacional do Ensino Médio, que foi criado pelo Ministério da
+                    Educação e Cultura (MEC) para testar o nível de aprendizado dos alunos que
+                    concluíram o ensino médio no Brasil.
+                </li>
+                <li>O Exame Nacional do Ensino Médio (Enem) é uma prova elaborada pelo Ministério da
+                    Educação para verificar o domínio de competências e habilidades dos estudantes
+                    que concluíram o ensino médio.
+                </li>
+                <li>Criado em 1998, ENEM é o exame que tem como objetivo avaliar o desempenho do
+                    estudante ao fim da escolaridade básica.
+                </li>
+                <li>O ENEM é uma prova realizada pelo Ministério da Educação do Brasil, criada em
+                    1998. Ela é utilizada para avaliar a qualidade do ensino médio no país.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUAL A IMPORTÂNCIA DO ENEM</pattern>
+        <template>
+            <random>
+                <li>Os resultados obtidos no ENEM são necessários para os estudantes ingressarem em
+                    universidades públicas ou ganhar bolsas de estudos em instituições particulares.
+                </li>
+                <li>Quando foi criado, em 1998, o Enem tinha a finalidade de avaliar o aprendizado
+                    dos alunos concluintes do Ensino Médio. No entanto, em 2009, o exame adquiriu
+                    status de vestibular e se tornou uma grande porta de entrada para instituições
+                    públicas e privadas de Ensino Superior.
+                </li>
+                <li>A nota do Enem abre muitas portas. Além de ser válida para o acesso às
+                    universidades públicas federais, o exame garante oportunidades no programa
+                    Universidade Para Todos (ProUni), que oferece bolsas de estudos para
+                    instituições privadas e certificados de conclusão do Ensino Médio para jovens
+                    maiores de 18 anos.
+                </li>
+                <li>Nos últimos anos, o Enem passou a ser a principal porta de entrada para o ensino
+                    superior no Brasil, atraindo a atenção da sociedade e gerando grande interesse
+                    público pela divulgação de dados do exame. Dentre as mais importantes
+                    atribuições do exame, estão:
+                    Requisito para o SiSU – o principal caminho para as universidades públicas;
+                    Critério para permitir a distribuição das bolsas do Prouni;
+                    Requisito para solicitação do Fundo de Financiamento Estudantil (Fies);
+                    Requisito para o Programa Nacional de Acesso ao Ensino Técnico (Pronatec);
+                    Critério de seleção para o Ciência sem Fronteiras;
+                    Proporcionar a Certificação para o ensino médio para maiores de 18 anos;
+                    Instrumento de aferição da qualidade das escolas de ensino médio.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>COMO ME INSCREVER</pattern>
+        <template>
+            <random>
+                <li>As inscrições do Enem 2016, deverão ser feitas exclusivamente no portal do Inep,
+                    acessível no endereço http://enem.inep.gov.br/. Para se inscrever, o candidato
+                    precisa informar alguns documentos pessoais (RG e CPF), endereço, e-mail e dados
+                    sobre a escolaridade.
+                </li>
+                <li>Fique atento ao período de inscrições. Você pode se inscrever no Enem 2016,
+                    exclusivamente pela internet, entre as 10h do dia 09 de maio de 2016 às 23h59 do
+                    dia 20 de maio de 2016. Leia o edital com atenção e preencha todos os campos
+                    solicitados de forma precisa. Lembre-se que a responsabilidade pelas informações
+                    é dos participantes. Mantenha seus dados de contato (e-mail e telefone)
+                    atualizados. O Inep poderá enviar informações importantes sobre o exame e as
+                    comunicações são feitas pelos contatos informados na inscrição.
+                </li>
+                <li>Para se inscrever no ENEM 2016 você deve acessar o link
+                    (http://enem.inep.gov.br) o candidato deve preencher alguns dados pessoais como
+                    números de documentos pessoais como CPF e identidade, mas lembrando de que o
+                    candidato deve cadastrar uma senha que deve ser guardada, pois esta senha de
+                    inscrição no ENEM será cobrada em outro momento.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>UMA DICA PARA ESTUDAR PARA O ENEM:</pattern>
+        <template>
+            <random>
+                <li>Estudar física, matemática ou português o dia inteiro pode não ser a estratégia
+                    mais eficiente para manter o foco. Quando você muda de disciplina, você se
+                    depara com informações de outra natureza ou categoria.
+                </li>
+                <li>Um plano de estudos é de grande importância para os candidatos que prestam as
+                    provas do Enem 2016, pois como o exame é bem extenso, e visa testar o
+                    conhecimento apreendido durante todo o ensino médio, tendo assim a necessidade
+                    do aluno elaborar seu plano de estudo, para saber exatamente quais serão as
+                    matérias, o conteúdo e o tempo para cada conteúdo de estudo.
+                </li>
+                <li>A escolha de um bom ambiente pode garantir ao candidato um melhor tempo de
+                    estudo e melhor aproveitamento, que deve escolher um ambiente calmo, organizado,
+                    com boa iluminação e ventilação, dessa forma sua aprendizagem será feita de
+                    forma mais rápida e tranqüila.
+                </li>
+                <li>Fazer pausar de alguns minutos após 1 hora de estudos pode ajudar ao estudante a
+                    descansar o cérebro e facilitar e reter o conhecimento, pois após algum tempo de
+                    estudo o rendimento do aprendizado decai, com a pausa de poucos minutos o
+                    estudante volta mais focado e descansado.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>O QUE PRECISO LEVAR PARA A HORA DA PROVA</pattern>
+        <template>
+            <random>
+                <li>É necessária uma caneta preta de material transparente, cartão de confirmação e
+                    documento de identificação com foto.
+                </li>
+                <li>Para fazer o exame, leve somente caneta esferográfica preta de corpo
+                    transparente. É recomendável levar mais de uma, por precaução. Lápis,
+                    lapiseiras,
+                    borrachas, relógios, óculos escuros, bonés, chapéus e similares não são
+                    permitidos.
+                    É aconselhável levar o cartão de confirmação nos dias de prova. A apresentação
+                    de
+                    documento de identidade original com foto é obrigatória. RG, passaporte,
+                    carteira de
+                    trabalho, Carteira Nacional de Habilitação com foto, Certificado de Dispensa de
+                    Incorporação e Certificado de Reservista são
+                    considerados válidos para apresentação, segundo o edital do exame.
+                </li>
+                <li>O que dever ser levado para o dia da prova é muito simples, apenas um documento
+                    de identificação original com foto e uma caneta esferográfica feita em material
+                    transparente de TINTA PRETA, muita atenção. É claro que pode e é até bom levar
+                    algum alimento e água.
+                </li>
+                <li>Você vai precisar de uma caneta esferográfica, de tubo transparente, de cor
+                    preta. Não serão permitidos os usos de lápis, borracha ou caneta de outras
+                    cores. Fique atento e leve pelo menos duas canetas pretas por precaução. Se uma
+                    falhar, você não ficará na mão. Leve um documento de identificação oficial com
+                    foto. Pode ser a carteira de identidade (R.G.), de motorista, o passaporte e até
+                    mesmo a carteira de trabalho. O cartão do Cadastro de Pessoa Física (CPF),
+                    embora seja um documento oficial, não possui foto, então, não será aceito na
+                    hora do exame.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>O QUE FAZER NOS DIAS QUE ANTECEDEM O EXAME</pattern>
+        <template>
+            <random>
+                <li>Faça questões de exames anteriores, cronometrando o tempo, descanse a mente e o
+                    corpo junto à família e amigos, durma cedo, coma alimentos saudáveis e respeite
+                    o horário das refeições. Além disso, simule o trajeto até o local da prova para
+                    evitar atrasos.
+                </li>
+                <li>Na véspera do exame, é bom usar as horas livres para simular o caminho até o
+                    local de prova - que consta no cartão de confirmação de inscrição. É
+                    recomendável pegar um ônibus e ver quanto tempo leva até o local de prova. É
+                    inadmissível que alguém que se preparou tanto perca essa prova por falta de
+                    planejamento.
+                </li>
+                <li>O desgaste é imenso. É bom que os alunos respeitem os horários das refeições e
+                    tenham uma dieta saudável. No entanto, não é hora de radicalizar. Uma mudança
+                    abrupta na dieta pode prejudicar o desempenho do aluno, assim como dormir pouco.
+                    Nos três primeiros dias da semana que antecedem a prova, ainda é importante que
+                    faça uma revisão, mas não em cima de conteúdos e sim de questões de provas
+                    passadas para que possa ter uma referência sobre os conteúdos que ainda não
+                    domine com clareza. Com isso, quem sabe, ainda pode dar uma melhorada. Nos 2
+                    últimos dias, procure atividades que possa divertir e não causar estresse. O
+                    ideal é não ter contato com o conteúdo para não chegar àquela conclusão do 'só
+                    sei que nada sei'. Procure atividades culturais como teatro, cinema.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>O QUE É IMPORTANTE SABER PARA FAZER UMA BOA PROVA</pattern>
+        <template>
+            <random>
+                <li>Responda as questões que você domina. Ao respondê-las, você garante duas coisas
+                    importantes: os pontos e a coerência nas respostas. Mas cuidado! Não caia na
+                    besteira de ler todas as questões de uma vez para analisar se são fáceis ou
+                    difíceis. Isso apenas roubará seu tempo de prova.
+                </li>
+                <li>Muito se diz que para fazer uma boa prova do Enem você tem saber interpretar os
+                    textos. Sim, isto está parcialmente correto, pois uma boa capacidade de
+                    interpretação vai te ajudar em várias questões. Estar com a leitura em dia é
+                    fundamental. Escrever sempre, também é importante para que você coloque no papel
+                    a forma como você pensa sobre determinado assunto e de quebra vai desenvolvendo
+                    seus textos para a “temida redação”.
+                </li>
+                <li>Evite perder tempo escolhendo questões para resolver. Siga a sequência e marque
+                    as que você tiver dúvida para fazer depois. Assim você não corre o risco de
+                    terminar o tempo e você precisar chutar várias questões sem nem ao menos ler o
+                    enunciado.
+                </li>
+                <li>Evite passar todas as questões para o gabarito no final. São muitas e você pode
+                    se confundir e, se demorar muito para notar o erro, pode acabar preenchendo
+                    muitas lacunas incorretas. Passe para o gabarito as que você já tiver certeza
+                    que sabe a resposta logo após responder a questão.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUAIS SÃO AS QUESTÕES QUE ENVOLVEM A PROVA</pattern>
+        <template>
+            <random>
+                <li>A prova possui um total de 180 questões. São 45 de Ciências Humanas e suas
+                    Tecnologias, 45 de Linguagens, Códigos e suas Tecnologias, 45 de Matemática e
+                    suas
+                    Tecnologias, 45 de Ciências da natureza e suas Tecnologias mais a redação.
+                </li>
+                <li>O Enem é composto por quatro provas objetivas, com 45 questões cada, e uma
+                    redação.
+                    Ciências Humanas e suas Tecnologias (História, Geografia, Filosofia e
+                    Sociologia) e
+                    Ciências da Natureza e suas Tecnologias (Química, Física e Biologia).
+                    Linguagens,
+                    Códigos e suas Tecnologias (Língua Portuguesa, Literatura, Língua Estrangeira,
+                    Artes, Educação Física e Tecnologias da Informação e Comunicação). Redação e
+                    Matemática e suas Tecnologias.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>UMA DICA PARA A HORA DA PROVA</pattern>
+        <template>
+            <random>
+                <li>Leve alimentos leves para comer e água. E não se esqueça de conferir os dados na
+                    prova
+                    recebida e no cartão-resposta.
+                </li>
+                <li>Para não perder tempo, faça anotações em cada questão. Vale até criar um código
+                    próprio
+                    com símbolos que indicam quando a pergunta é fácil ou difícil e as possíveis
+                    alternativas corretas. Dessa forma, a revisão ou segunda verificação das
+                    questões é mais
+                    rápida.
+                </li>
+                <li>Leia primeiro as questões e depois o texto, assim, você já vai lê-lo com mais
+                    cuidado,
+                    procurando pelas respostas. Com as questões em mente, faça primeiro uma leitura
+                    panorâmica do texto, apenas para obter uma ideia geral do que é abordado em cada
+                    parágrafo.
+                </li>
+                <li>Uma boa dica é sublinhar as palavras-chave de cada parágrafo, para facilitar a
+                    consulta
+                    se você precisar retornar ao texto para responder alguma questão.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>COMO FAZER UMA BOA REDAÇÃO</pattern>
+        <template>
+            <random>
+                <li>Você deve fazer o uso adequado da linguagem, ou seja, obedecer as regras
+                    gramaticais, a
+                    forma padrão; demonstrar que compreendeu o tema solicitado por meio dos
+                    argumentos
+                    apresentados ao longo de sua produção; mostrar que trabalhou de forma lógica,
+                    com
+                    critério, ao solucionar, organizar e priorizar os fatos; fazer uso correto dos
+                    elementos
+                    de coesão, que garantem a progressão textual e contribuem para a coerência; e,
+                    ainda,
+                    comprovar que tem repertório que conhece a sociedade em que vive, apresentando
+                    soluções
+                    viáveis para o problema apresentado, sempre respeitando a ética.
+                </li>
+                <li>Revise o texto: Agora é hora de corrigir a gramática e encontrar outros errinhos
+                    na sua
+                    redação. Caso tenha dúvida na grafia de alguma palavra, tente substituir por
+                    outra
+                    expressão. Preste atenção se não existe alguma frase sem sentido perdida pelo
+                    texto e
+                    avalie se há coerência entre as ideias.
+                </li>
+                <li>Uma dica muito importante é fazer a redação primeiro, por três motivos: você não
+                    estará
+                    cansado, não vai se confundir com os assuntos abordados nas questões anteriores
+                    e a
+                    matemática te dará muito trabalho.
+                </li>
+                <li>Veja o tema de redação e faça uma leitura cuidadosa da prova: essa é a principal
+                    dica e
+                    vai influenciar todo o seu desempenho. Leia e releia a proposta e os textos de
+                    apoio. Dê
+                    uma lida também nas questões da prova. Pode ser que alguma informação ajude no
+                    tema da
+                    redação. Atenção: essa etapa é essencial para que você não fuja do tema.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUAL A IMPORTÂNCIA DA REDAÇÃO</pattern>
+        <template>
+            <random>
+                <li>A redação é muito importante para quem vai tentar uma bolsa de estudos com a
+                    nota do
+                    Enem. Enquanto a maioria das universidades utiliza apenas a parte objetiva da
+                    prova, o
+                    ProUni (Programa Universidade para Todos), do Governo Federal usa a média final.
+                    Por
+                    tanto, neste caso a redação corresponde a 50% da nota.
+                </li>
+                <li>A redação não é apenas mais uma matéria que cai no vestibular. Saber escrever,
+                    se
+                    expressar, relacionar ideias, criar argumentos, articular soluções são
+                    habilidades que
+                    serão exigidas de nós a todo tempo. Se pensarmos no vestibular como o início da
+                    passagem
+                    para uma vida adulta, podemos considerar a redação como uma amostra daquilo que
+                    faremos
+                    constantemente como profissionais adultos: resolver problemas.
+                </li>
+                <li>No caso do aluno inscrito utilizar o Prouni (Programa Universidade para Todos)
+                    para
+                    ingressar numa instituição de ensino superior a redação pode ter um peso de até
+                    50% no
+                    processo seletivo.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>PORQUE É IMPORTANTE NÃO ZERAR A REDAÇÃO</pattern>
+        <template>Se o seu objetivo é ter acesso à universidade, é importante saber que para se
+            inscrever
+            nos programas de acesso à universidade (SISU e ProUni) você não pode ter zerado a
+            redação.
+        </template>
+    </category>
+    <category>
+        <pattern>É UMA BOA PRÁTICA “CHUTAR”</pattern>
+        <template>Não. As questões da prova são divididas por níveis de dificuldade, que vão de
+            fáceis a
+            difíceis. A TRI (Teoria de Resposta ao Item) analisa as respostas do aluno: se constata
+            que ele
+            errou muitas perguntas da categoria "fácil" e acertou muitas perguntas da categoria
+            "difícil",
+            considera o fato estatisticamente improvável e deduz que ele chutou. Quando isso ocorre,
+            a
+            questão considerada chutada passa a valer menos porque parece ser incoerente com o
+            padrão de
+            respostas da prova e a média do aluno que chutou cai.
+        </template>
+    </category>
+    <category>
+        <pattern>HÁ COMO SABER QUAIS QUESTÕES SÃO CONSIDERADAS DIFÍCEIS</pattern>
+        <template>Não. Porém, é importante destacar que Matemática e redação são as provas onde o
+            maior
+            número de acertos gera mais resultados.
+        </template>
+    </category>
+    <category>
+        <pattern>COMO PLANEJAR O TEMPO DA PROVA DO ENEM</pattern>
+        <template>
+            <random>
+                <li>De acordo com o tempo e a quantidade de questões, são em média 3 minutos para
+                    cada
+                    questão. Portanto, faça primeiro as que você sabe e depois tentar as demais.
+                </li>
+                <li>
+                    Os professores recomendam que ao responder 70% de uma prova o candidato deve
+                    pular
+                    para a
+                    seguinte, retornando à prova anterior se houver tempo. Além disso, o ideal é
+                    deixar
+                    ao menos
+                    trinta minutos para o preenchimento do gabarito.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUAIS AS REGRAS PARA FAZER A REDAÇÃO</pattern>
+        <template>
+            <random>
+                <li>Para fazer uma boa redação, o estudante precisa demonstrar através da sua
+                    escrita que
+                    domina as cinco competências exigidas pelo Enem. São elas: domínio da norma
+                    padrão,
+                    compreensão da proposta, capacidade de organizar, relacionar e interpretar,
+                    conhecimento
+                    dos mecanismos linguísticos e capacidade de criar uma intervenção.
+                </li>
+                <li>Deve se respeitar o número de linhas (mínimo e máximo), o tipo de texto deve ser
+                    dissertativo-argumentativo, o título não é obrigatório, mas conta na pontuação e
+                    os
+                    textos de apoio não podem ser copiados.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>QUAIS OS MOTIVOS PODEM ZERAR A NOTA DA REDAÇÃO</pattern>
+        <template>
+            <random>
+                <li>Fugir do tema, inserções indevidas ou desconectadas do restante do texto, a não
+                    utilização da estrutura dissertativo-argumentativa (escrever uma poesia ou texto
+                    narrativo, por exemplo), conter menos de 8 linhas, desrespeito aos direitos
+                    humanos e
+                    folha da redação em branco, mesmo que o rascunho esteja preenchido.
+                </li>
+                <li>A redação não pode apresentar nenhum tipo de identificação, portanto, qualquer
+                    imagem ou
+                    desenho, por menor que seja, anulará a prova. Isso também ocorrerá se houver
+                    ofensa a
+                    alguém (impropérios).
+                </li>
+                <li>Parte do texto deliberadamente desconectada com o tema proposto. Esse critério
+                    de
+                    anulação foi estabelecido para evitar que candidatos desrespeitem o exame,
+                    colocando no
+                    meio das redações textos que não tenham nenhuma conexão com o tema ou com a
+                    tipologia
+                    textual, como receitas de macarrão, hinos de futebol, biografias etc.
+                </li>
+            </random>
+        </template>
+    </category>
+</aiml>
